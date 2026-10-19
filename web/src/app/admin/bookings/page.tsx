@@ -71,7 +71,7 @@ export default function AdminBookingsPage() {
   return (
     <AdminGate>
       <h1 className="text-2xl font-semibold tracking-tight text-navy">
-        กะวันนี้
+        คิวจอง
       </h1>
       <label className="mt-6 grid max-w-xs gap-1.5 text-sm">
         <span className="text-muted">วันที่</span>
