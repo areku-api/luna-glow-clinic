@@ -92,8 +92,8 @@ export default function CartPage() {
   return (
     <main className="flex flex-1 flex-col">
       <SiteHeader />
-      <section className="page-enter mx-auto grid max-w-5xl gap-8 px-5 py-10 lg:grid-cols-2">
-        <div className="min-w-0">
+      <section className="page-enter mx-auto grid max-w-6xl gap-8 px-5 py-10 lg:grid-cols-[7fr_3fr] lg:items-start">
+        <div className="min-w-0 lg:w-full">
           <h1 className="text-2xl font-semibold tracking-tight text-navy">
             {t("cartTitle")}
           </h1>
@@ -155,7 +155,7 @@ export default function CartPage() {
           ) : null}
         </div>
 
-        <div className="min-w-0">
+        <aside className="min-w-0 lg:sticky lg:top-24">
           <h2 className="text-2xl font-semibold tracking-tight text-navy">
             {t("cartPay")}
           </h2>
@@ -195,7 +195,7 @@ export default function CartPage() {
               {loading ? t("cartSubmitting") : t("cartSubmit")}
             </button>
           </form>
-        </div>
+        </aside>
       </section>
       <SiteFooter />
     </main>
